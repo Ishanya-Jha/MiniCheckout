@@ -145,7 +145,7 @@ Only observed and reproducible results are recorded in the test documentation.
 
 The MiniCheckout storefront featuring the fashion-inspired design and product catalogue.
 
-![MiniCheckout Storefront](docs/screenshots/storefront.png)
+![MiniCheckout Storefront](docs/screenshots/Storefront.png)
 
 ### 2. Product Search and Category Filters
 
