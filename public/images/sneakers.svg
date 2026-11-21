@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f8f1f1"/><stop offset="1" stop-color="#eadde1"/></linearGradient>
+    <linearGradient id="shoe" x2=".2" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d8d5d7"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <ellipse cx="305" cy="455" rx="205" ry="28" fill="#8c7880" opacity=".23" filter="url(#shadow)"/>
+  <g transform="translate(45 52) rotate(-12 260 260)">
+    <path d="M70 330c44-6 89-33 124-82l46-74c12-19 37-24 55-11l84 63c36 27 74 48 121 58 24 5 42 23 45 47l5 42c2 20-13 37-34 39l-385 22c-38 2-69-28-65-66l4-20z" fill="url(#shoe)" stroke="#c9c5c8" stroke-width="5"/>
+    <path d="M67 374c93 11 333-2 478-31l4 35c2 20-13 37-34 39l-385 22c-38 2-69-28-65-66z" fill="#fff" stroke="#d0cbd0" stroke-width="5"/>
+    <path d="M240 187c40 2 76 22 109 50l57 47-65 19-81-54-54 13z" fill="#e7e4e5"/>
+    <path d="M267 224l68 55m-91-37l68 55m-91-36l69 55" stroke="#aaa4aa" stroke-width="8" stroke-linecap="round"/>
+    <path d="M135 324c35-18 59-40 78-70" fill="none" stroke="#c7c2c7" stroke-width="5"/>
+    <path d="M105 355c112 13 260-1 395-29" fill="none" stroke="#c8c3c8" stroke-width="4"/>
+    <path d="M190 290l35 25-34 10-35-24z" fill="#f5f3f4"/>
+  </g>
+  <text x="32" y="555" font-family="Arial,sans-serif" font-size="17" letter-spacing="4" fill="#8c7781">MINICHECKOUT / FOOTWEAR</text>
+</svg>
