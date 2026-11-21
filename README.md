@@ -4,11 +4,13 @@ A fashion-inspired, single-page retail checkout application built to demonstrate
 
 ## Project Overview
 
-MiniCheckout is a frontend-only fashion retail demonstration featuring two synthetic products, a responsive storefront, product search and category filtering, shopping-cart management, customer-name validation, and order confirmation with a generated reference.
+MiniCheckout is a frontend-only fashion retail application developed as part of the **Fynd HackQuest SDET Intern challenge**, based on the Mini Checkout and Browser Test Suite assignment.
 
-The project focuses on delivering a smooth checkout experience while demonstrating practical software testing using Playwright.
+The project features two synthetic fashion products, a responsive storefront, product search and category filtering, shopping-cart management, quantity updates, customer-name validation, and order confirmation with a generated reference.
 
-**This is an independent educational demo. No real payments are collected, and no backend or database is used.**
+It also demonstrates practical software quality assurance through Playwright-based browser automation, covering successful checkout, input validation, accurate cart calculations, and manual testing of duplicate submissions.
+
+**This is an independent educational submission. No real payments are collected, and no backend or database is used.**
 
 ## Product Catalogue
 
@@ -45,7 +47,7 @@ The project focuses on delivering a smooth checkout experience while demonstrati
 
 - Node.js 18 or later
 - npm
-- A Chromium-compatible testing environment
+- Chromium-compatible testing environment
 
 ## Run Locally
 
@@ -99,7 +101,7 @@ Open the HTML test report:
 npm run test:report
 ```
 
-The Playwright configuration starts the Vite development server automatically when the test suite runs.
+The Playwright configuration starts the Vite development server automatically when the tests run.
 
 ## Automated Test Coverage
 
@@ -124,17 +126,75 @@ The project includes three mandatory automated checkout scenarios.
 - **Automated tests passed:** 3
 - **Automated tests failed:** 0
 - **Manual scenarios passed:** 2
+- **Automated execution time:** 12.1 seconds
 
-See `docs/TEST-PLAN.md`, `docs/TEST-RESULTS.md`, and `docs/DEFECT-REPORT.md` for testing documentation.
+See `docs/TEST-PLAN.md`, `docs/TEST-RESULTS.md`, and `docs/DEFECT-REPORT.md` for detailed testing documentation.
 
 ## Manual Testing
 
-Two additional scenarios are verified manually:
+Two additional scenarios were verified manually:
 
-1. **Empty Cart:** Attempting to proceed to checkout without adding a product must prevent checkout.
-2. **Rapid Double Submission:** Rapidly clicking Place Order must not produce duplicate confirmations.
+1. **MT01 - Empty Cart:** Attempting to proceed to checkout without adding a product prevents checkout.
+2. **MT02 - Rapid Double Submission:** Rapidly clicking Place Order does not produce duplicate confirmations.
 
 Only observed and reproducible results are recorded in the test documentation.
+
+## Application Screenshots
+
+### 1. Storefront
+
+The MiniCheckout storefront featuring the fashion-inspired design and product catalogue.
+
+![MiniCheckout Storefront](docs/screenshots/storefront.png)
+
+### 2. Product Search and Category Filters
+
+Demonstrates product search and category-based filtering.
+
+![Product Search and Filters](docs/screenshots/search-filters.png)
+
+### 3. Shopping Cart
+
+Displays selected products, quantity controls, subtotal, and order total.
+
+![Shopping Cart](docs/screenshots/shopping-cart.png)
+
+### 4. Checkout - Customer Name Entry
+
+Shows the required customer-name field before order submission.
+
+![Checkout Name Entry](docs/screenshots/checkout-name-entry.png)
+
+### 5. Order Confirmation
+
+Displays successful order placement, customer name, generated order reference, and order summary.
+
+![Order Confirmation](docs/screenshots/order-confirmation.png)
+
+## Automated Testing Evidence
+
+### Playwright Test Report
+
+The Playwright report demonstrates the results of the three automated checkout tests.
+
+![Playwright Test Results](docs/screenshots/playwright-test-results.png)
+
+**Test Execution Summary:**
+
+| Metric | Result |
+|---|---:|
+| Total tests | 3 |
+| Passed | 3 |
+| Failed | 0 |
+| Flaky | 0 |
+| Skipped | 0 |
+| Execution time | 12.1 seconds |
+
+**Automated test cases:**
+
+- TC01: Successful checkout and order reference.
+- TC02: Missing customer name validation.
+- TC03: Quantity update and exact order total.
 
 ## Project Structure
 
@@ -156,6 +216,14 @@ MiniCheckout/
 │   └── checkout.spec.js
 │
 ├── docs/
+│   ├── screenshots/
+│   │   ├── storefront.png
+│   │   ├── search-filters.png
+│   │   ├── shopping-cart.png
+│   │   ├── checkout-name-entry.png
+│   │   ├── order-confirmation.png
+│   │   └── playwright-test-results.png
+│   │
 │   ├── TEST-PLAN.md
 │   ├── TEST-RESULTS.md
 │   └── DEFECT-REPORT.md
@@ -187,11 +255,10 @@ The project uses its own branding and synthetic products. It is not an official 
 - No external APIs or commerce services.
 - Product search and category filtering operate locally on the available synthetic catalogue.
 
-## Live Demo
+## Live Demo and Repository
 
-**Deployed Application:** https://mini-checkout-six.vercel.app/
-
-**GitHub Repository:** https://github.com/Ishanya-Jha/MiniCheckout
+- **Live Application (Vercel):** https://mini-checkout-six.vercel.app/
+- **GitHub Repository:** https://github.com/Ishanya-Jha/MiniCheckout
 
 ## Deployment
 
